@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jeremy Ivy - Front-end developer &amp; web designer</title>
+	<link href="main.css" rel="stylesheet">
+	<script src="main.js"></script>
+<style>
+	.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="header">
+			<div class="logo">
+				<img src="me.jpg" class="vanity" alt="Jeremy Ivy">
+			</div>
+			<section class="content">
+				<div class="inner">
+					<h1>Hi there</h1>
+					<p>My name is Jeremy.<br>
+					I'm an expert CSS-centric front-end developer with over a decade's professional experience,
+					looking to find great work projects at the intersections of design, development, &amp; accessibility.</p>
+				</div>
+			</section>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#experience">Bonafides</a></li>
+					<li><a href="folio.html">Portfolio</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Connnect</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="main" class="hidden">
+			<article id="intro" class="hidden">
+				<h2 class="major">Intro</h2>
+				<span class="image main"><img src="bg3.png" alt="Intro Image"></span>
+				<p>Since 2006, I've been writing bespoke best-of-class web code for SMBs and Fortune 500 companies. I've
+					been around long enough to code for Netscape, &amp; debug for IE5, however, I'm forward-minded &amp;
+					prefer clean modern approaches to web development.</p>
+				<p>I'm currently seeking freelance &amp; remote opportunities with the right clients &amp; companies.</p>
+				<p>I'm also sharpening my programming chops, and you can see my <a href="folio.html" target="_blank">portfolio here</a>.</p>
+				<div class="close">Close</div>
+			</article>
+
+			<article id="services" class="hidden">
+				<!-- Content goes here -->
+				<div class="close">Close</div>
+			</article>
+
+			<article id="experience" class="hidden">
+				<!-- Content goes here -->
+				<div class="close">Close</div>
+			</article>
+
+			<article id="contact" class="hidden">
+				<!-- Content goes here -->
+				<div class="close">Close</div>
+			</article>
+		</main>
+
+		<footer id="footer">
+			<p class="copyright">©2023 Jeremy Ivy</p>
+		</footer>
+	</div>
+	<script>
+		// Get all nav links
+var navLinks = document.querySelectorAll('nav ul li a');
+
+// Add click event listener to each link
+navLinks.forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    // Hide all sections
+    var sections = document.querySelectorAll('main article');
+    sections.forEach(function(section) {
+      section.classList.remove('visible');
+      section.classList.add('hidden');
+    });
+
+    // Show the clicked section
+    var target = document.querySelector(this.getAttribute('href'));
+    target.classList.remove('hidden');
+    target.classList.add('visible');
+  });
+});
+
+	</script>
+</body>
+
+</html>
