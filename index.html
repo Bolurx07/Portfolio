@@ -4,100 +4,151 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Jeremy Ivy - Front-end developer &amp; web designer</title>
-	<link href="main.css" rel="stylesheet">
-	<script src="main.js"></script>
-<style>
-	.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-</style>
+	<link href="style.css" rel="stylesheet">
+	<script src="app.js"></script>
 </head>
-
 <body>
-	<div id="wrapper">
-		<header id="header">
-			<div class="logo">
-				<img src="me.jpg" class="vanity" alt="Jeremy Ivy">
-			</div>
-			<section class="content">
-				<div class="inner">
-					<h1>Hi there</h1>
-					<p>My name is Jeremy.<br>
-					I'm an expert CSS-centric front-end developer with over a decade's professional experience,
-					looking to find great work projects at the intersections of design, development, &amp; accessibility.</p>
+	<div class="cont s--inactive">
+		<!-- cont inner start -->
+		<div class="cont__inner">
+		  <!-- el start -->
+		  <div class="el">
+			<div class="el__overflow">
+			  <div class="el__inner">
+				<div class="el__bg"></div>
+				<div class="el__preview-cont">
+				    <h2 class="el__heading">Lifelong student of Design</h2>
+					<p>Ever since my days of art school, I have been fascinated by visual design. 
+						I pursued a BFA in Fine Arts with an emphasis on graphic design from the late 
+						1990's to the early 2000's. Design principles will always inform my approach 
+						to everything creative that I do. I love working creatively 
+						with space, and I particularly love typography.</p>
 				</div>
-			</section>
-			<nav>
-				<ul>
-					<li><a href="#intro">Intro</a></li>
-					<li><a href="#experience">Bonafides</a></li>
-					<li><a href="folio.html">Portfolio</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#contact">Connnect</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<main id="main" class="hidden">
-			<article id="intro" class="hidden">
-				<h2 class="major">Intro</h2>
-				<span class="image main"><img src="bg3.png" alt="Intro Image"></span>
-				<p>Since 2006, I've been writing bespoke best-of-class web code for SMBs and Fortune 500 companies. I've
-					been around long enough to code for Netscape, &amp; debug for IE5, however, I'm forward-minded &amp;
-					prefer clean modern approaches to web development.</p>
-				<p>I'm currently seeking freelance &amp; remote opportunities with the right clients &amp; companies.</p>
-				<p>I'm also sharpening my programming chops, and you can see my <a href="folio.html" target="_blank">portfolio here</a>.</p>
-				<div class="close">Close</div>
-			</article>
-
-			<article id="services" class="hidden">
-				<!-- Content goes here -->
-				<div class="close">Close</div>
-			</article>
-
-			<article id="experience" class="hidden">
-				<!-- Content goes here -->
-				<div class="close">Close</div>
-			</article>
-
-			<article id="contact" class="hidden">
-				<!-- Content goes here -->
-				<div class="close">Close</div>
-			</article>
-		</main>
-
-		<footer id="footer">
-			<p class="copyright">©2023 Jeremy Ivy</p>
-		</footer>
-	</div>
-	<script>
-		// Get all nav links
-var navLinks = document.querySelectorAll('nav ul li a');
-
-// Add click event listener to each link
-navLinks.forEach(function(link) {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-
-    // Hide all sections
-    var sections = document.querySelectorAll('main article');
-    sections.forEach(function(section) {
-      section.classList.remove('visible');
-      section.classList.add('hidden');
-    });
-
-    // Show the clicked section
-    var target = document.querySelector(this.getAttribute('href'));
-    target.classList.remove('hidden');
-    target.classList.add('visible');
-  });
-});
-
-	</script>
+				<div class="el__content">
+				  <div class="el__text">Designer</div>
+				  <div class="el__close-btn"></div>
+				</div>
+			  </div>
+			</div>
+			<div class="el__index">
+			  <div class="el__index-back">Design</div>
+			  <div class="el__index-front">
+				<div class="el__index-overlay" data-index="1">Design</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- el end -->
+		  <!-- el start -->
+		  <div class="el">
+			<div class="el__overflow">
+			  <div class="el__inner">
+				<div class="el__bg"></div>
+				<div class="el__preview-cont">
+				  <h2 class="el__heading">Web UI / Front-end Developer</h2>
+					<p>The bulk of my professional career has been spent doing web design and 
+						development. Since 2006 I've worked for a plethora of clients, including 
+						AT&T, Aetna, and New Balance. My strongest suit in this arena is my HTML 
+						and CSS chops. I was mentored by folks from The Web Standards Project (WaSP), 
+						and while that seems like ancient history to younger developers, grounding 
+						in those principles helps my work stand apart from people using the latest 
+						framworks and libraries. I can do that stuff too, but I can get into the 
+						weeds and code from scratch, too.</p>
+				</div>
+				<div class="el__content">
+				  <div class="el__text">Developer</div>
+				  <div class="el__close-btn"></div>
+				</div>
+			  </div>
+			</div>
+			<div class="el__index">
+			  <div class="el__index-back">Dev</div>
+			  <div class="el__index-front">
+				<div class="el__index-overlay" data-index="2">Front-end/UI Developer</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- el end -->
+		  <!-- el start -->
+		  <div class="el">
+			<div class="el__overflow">
+			  <div class="el__inner">
+				<div class="el__bg"></div>
+				<div class="el__preview-cont">
+				  <h2 class="el__heading">Creative Storyteller</h2>
+				  <p>I'm returning to my creative roots lately via photography and film. My travels have taken me to Southeast Asia and in particular, Thailand. 
+					I'm beginning a journey as a creative storyteller, to show people the history, mysteries, and magic of Asia, starting on the ground, wherever I'm located.
+				  </p>
+				</div>
+				<div class="el__content">
+				  <div class="el__text">Creative Storyteller</div>
+				  <div class="el__close-btn"></div>
+				</div>
+			  </div>
+			</div>
+			<div class="el__index">
+			  <div class="el__index-back">Creative</div>
+			  <div class="el__index-front">
+				<div class="el__index-overlay" data-index="3">Creative</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- el end -->
+		  <!-- el start -->
+		  <div class="el">
+			<div class="el__overflow">
+			  <div class="el__inner">
+				<div class="el__bg"></div>
+				<div class="el__preview-cont">
+				  <h2 class="el__heading">Magical thinker</h2>
+				  <p>I've always been fascinated by mythology, spiritual beliefs and 
+					magic. These inform my worldview on a deep level, and I am a lifelong 
+					study of religions and spiritual practices. Need some out of the box 
+					thinking? I'm someone you can ask.</p>
+				</div>
+				<div class="el__content">
+				  <div class="el__text">Magician</div>
+				  <div class="el__close-btn"></div>
+				</div>
+			  </div>
+			</div>
+			<div class="el__index">
+			  <div class="el__index-back">Magical Thinker</div>
+			  <div class="el__index-front">
+				<div class="el__index-overlay" data-index="4">Magician</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- el end -->
+		  <!-- el start -->
+		  <div class="el">
+			<div class="el__overflow">
+			  <div class="el__inner">
+				<div class="el__bg"></div>
+				<div class="el__preview-cont">
+				  <h2 class="el__heading">Get in touch</h2>
+				  <p>
+					US phone:+1 636-299-0766
+					Thailand phone:+66 0800817680
+					Skype: jeremyivy76@outlook.com
+					Email: jeremy.ivy@gmail.com
+				  </p>
+				</div>
+				<div class="el__content">
+				  <div class="el__text">Contact</div>
+				  <div class="el__close-btn"></div>
+				</div>
+			  </div>
+			</div>
+			<div class="el__index">
+			  <div class="el__index-back">Contact</div>
+			  <div class="el__index-front">
+				<div class="el__index-overlay" data-index="5">Contact</div>
+			  </div>
+			</div>
+		  </div>
+		  <!-- el end -->
+		</div>
+		<!-- cont inner end -->
+	  </div>
 </body>
-
 </html>
