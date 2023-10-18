@@ -1,2 +1,2 @@
-# jeremyivy.github.io
+# portfolio
 Front-end Developer, Designer, and Creative
